@@ -1,4 +1,3 @@
-import math
 import random
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,6 +5,10 @@ import time
 
 
 start_time=time.time()
+ncx2=set()
+ncy2=set()
+nsx2=set()
+nsy2=set()
 ncx=[]
 ncy=[]
 nsx=[]
@@ -21,10 +24,15 @@ for i in range(N):
         nccounter+=1
         ncx.append(x)
         ncy.append(y)
+        
     elif(d2>1):
         nscounter+=1
         nsx.append(x)
         nsy.append(y)
+        
+        
+        
+
 
 print("Numero dei punti dentro al cerchio: {0}\tNumero dei punti fuori dal cerchio: {1}".format(nccounter,nscounter))
 
